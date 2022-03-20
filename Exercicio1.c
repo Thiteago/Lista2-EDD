@@ -60,14 +60,14 @@ void ex3(){
     while(primos < n){
 
         for(i=1; i<=j; i++){
-            if(i%j == 0){
+            if(j%i == 0){
                 div++;
             }
         }
 
         if(div == 2){
             primos++;
-            printf("%d", j);
+            printf("%d \n", j);
         }
         div = 0;
         j++;
